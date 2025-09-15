@@ -20,6 +20,10 @@ pip install "fastapi[all]" uvicorn
 
 ## Demo
 1. Start the backend server: `uvicorn main:app --reload`.
+    - **uvicorn**: Runs the ASGI server (Uvicorn).
+    - **main**: Refers to the Python file main.py (without the .py extension).
+    - **app**: Refers to the FastAPI app instance inside main.py
+    - **--reload**: Enables auto-reload so the server restarts whenever you make changes to your code (useful for development).
 2. Open **index.html** in your browser to launch the frontend.
 
 ## Keywords
