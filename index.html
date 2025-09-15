@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Example</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Body -->
+    <div class="container mt-4 mb-4">
+        <h1 class="text-center mb-4">Simple Todo list</h1>
+        <div class="chart-container">
+            <canvas id="tasksChart"></canvas>
+        </div>
+        <form id="taskForm" class="mb-4">
+            <div class="input-group">
+                <input type="text" id="taskInput" class="form-control" placeholder="Enter new task" required>
+                <button type="submit" class="btn btn-primary">Add Task</button>
+            </div>
+        </form>
+        <div id="taskList"></div>
+        <button id="clearTasks" class="btn btn-danger mt-3">Clear All Tasks</button>
+    </div>
+
+    <!-- CDN -->
+    <script src="https://unpkg.com/rxjs@7/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
